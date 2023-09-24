@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            form {
+                display: table;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            p { 
+                display: table-row;  
+            }
+            
+            form input[type=text] {
+                width: 300px;
+            }
+            
+            form input[type=submit] {
+                background-color: #1e90ff;
+                color: white;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <form action="https://www.google.com/search">
+            <table>
+                <tbody>
+                        <p><input type="text" placeholder="Find pages with… “all these words:”"  name="as_q"></p>
+                        <p><input type="text" placeholder="Find pages with… “this exact word or phrase:" name="as_epq"></p>
+                        <p><input type="text" placeholder="Find pages with… “any of these words:" name="as_oq"></p>
+                        <p><input type="text" placeholder="Find pages with… “none of these words:" name="as_eq"></p>
+                        <p><input type="submit" value="Advanced Google Search"></p>
+                    
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
